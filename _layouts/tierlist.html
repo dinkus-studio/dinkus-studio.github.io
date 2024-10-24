@@ -1,0 +1,157 @@
+---
+layout: page
+---
+
+<style>
+  .tier-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tier-row {
+    display: flex;
+    margin-bottom: 10px;
+    min-height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .tier-label {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .tier-content {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+  }
+  .tier-item {
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 4px;
+    flex: 0 0 auto;
+    min-width: 100px;
+    min-height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tier-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    z-index: 1;
+  }
+
+  .tier-item span {
+    position: relative;
+    z-index: 2;
+    font-weight: 700; /* Bolder text */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+      -2px -2px 4px rgba(0, 0, 0, 0.8), 2px -2px 4px rgba(0, 0, 0, 0.8),
+      -2px 2px 4px rgba(0, 0, 0, 0.8); /* Multi-directional text shadow */
+    letter-spacing: 0.5px; /* Slightly spread letters */
+    padding: 4px 8px;
+  }
+
+  .s-tier {
+    background-color: #ff7f7f;
+  }
+  .a-tier {
+    background-color: #ffbf7f;
+  }
+  .b-tier {
+    background-color: #ffff7f;
+  }
+  .c-tier {
+    background-color: #7fff7f;
+  }
+  .d-tier {
+    background-color: #7fbfff;
+  }
+  .f-tier {
+    background-color: #7f7f7f;
+  }
+</style>
+
+<div class="tier-container">
+  <div class="tier-row">
+    <div class="tier-label s-tier">S</div>
+    <div class="tier-content" id="s-tier">
+      <a
+        href="/tags/dumb-tag/"
+        class="tier-item"
+        style="background-image: url('/assets/images/DSCF0039.JPG')"
+      >
+        <span>Dumb Tag</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label a-tier">A</div>
+    <div class="tier-content" id="a-tier"></div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label b-tier">B</div>
+    <div class="tier-content" id="b-tier"></div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label c-tier">C</div>
+    <div class="tier-content" id="c-tier"></div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label d-tier">D</div>
+    <div class="tier-content" id="d-tier"></div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label f-tier">F</div>
+    <div class="tier-content" id="f-tier"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Make tier rows droppable
+    const tierContents = document.querySelectorAll(".tier-content");
+    tierContents.forEach((container) => {
+      container.addEventListener("dragover", (e) => {
+        e.preventDefault();
+      });
+
+      container.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const itemId = e.dataTransfer.getData("text");
+        const item = document.getElementById(itemId);
+        container.appendChild(item);
+      });
+    });
+  });
+</script>
