@@ -3,6 +3,19 @@ layout: default
 refactor: true
 ---
 
+<style>
+  .firefly {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #fff04d;
+    pointer-events: none;
+    z-index: 1000;
+  }
+</style>
+
 <script src="{{ '/assets/js/fireflies.js' | relative_url }}"></script>
 {% include lang.html %} {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and
