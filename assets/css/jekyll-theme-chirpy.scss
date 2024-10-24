@@ -1,0 +1,21 @@
+---
+---
+
+@import 'main
+{%- if jekyll.environment == ' production
+  ' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Firefly animations */
+.firefly {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fff04d; /* Increased glow radius */
+  pointer-events: none;
+  z-index: 1000;
+}
