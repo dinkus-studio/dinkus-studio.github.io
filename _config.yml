@@ -38,11 +38,11 @@ social:
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/username 
+    - https://github.com/cayubweeums
   name: cayub
   email: cantread@duck.com
   links:
-    - https://www.youtube.com/watch?v=Yv_S7KrOlfk
+    - https://www.youtube.com/watch?v=E4WlUXrJgy4
 
 # Site Verification Settings
 webmaster_verifications:

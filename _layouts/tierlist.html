@@ -25,6 +25,8 @@ layout: page
     font-weight: bold;
     font-size: 24px;
     flex-shrink: 0;
+    color: white; /* Add white text color */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   .tier-content {
@@ -77,63 +79,129 @@ layout: page
     padding: 4px 8px;
   }
 
-  .s-tier {
-    background-color: #ff7f7f;
-  }
-  .a-tier {
-    background-color: #ffbf7f;
-  }
-  .b-tier {
+  .tier-1 {
+    background-color: #7fff7f;
+  } /* Green */
+  .tier-2 {
     background-color: #ffff7f;
   }
-  .c-tier {
-    background-color: #7fff7f;
+  .tier-3 {
+    background-color: #ffef7f;
   }
-  .d-tier {
-    background-color: #7fbfff;
+  .tier-4 {
+    background-color: #ffdf7f;
   }
-  .f-tier {
-    background-color: #7f7f7f;
+  .tier-5 {
+    background-color: #ffcf7f;
   }
+  .tier-6 {
+    background-color: #ffbf7f;
+  }
+  .tier-7 {
+    background-color: #ffaf7f;
+  }
+  .tier-8 {
+    background-color: #ff9f7f;
+  }
+  .tier-9 {
+    background-color: #ff8f7f;
+  }
+  .tier-10 {
+    background-color: #ff7f7f;
+  } /* Red */
 </style>
 
 <div class="tier-container">
   <div class="tier-row">
-    <div class="tier-label s-tier">S</div>
-    <div class="tier-content" id="s-tier">
-      <a
-        href="/tags/dumb-tag/"
-        class="tier-item"
-        style="background-image: url('/assets/images/DSCF0039.JPG')"
-      >
-        <span>Dumb Tag</span>
+    <div class="tier-label tier-1">1</div>
+    <div class="tier-content" id="tier-1">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Gulf Islands NS</span>
       </a>
     </div>
   </div>
 
   <div class="tier-row">
-    <div class="tier-label a-tier">A</div>
-    <div class="tier-content" id="a-tier"></div>
+    <div class="tier-label tier-2">2</div>
+    <div class="tier-content" id="tier-2"></div>
   </div>
 
   <div class="tier-row">
-    <div class="tier-label b-tier">B</div>
-    <div class="tier-content" id="b-tier"></div>
+    <div class="tier-label tier-3">3</div>
+    <div class="tier-content" id="tier-3">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Buffalo River NR</span>
+      </a>
+    </div>
   </div>
 
   <div class="tier-row">
-    <div class="tier-label c-tier">C</div>
-    <div class="tier-content" id="c-tier"></div>
+    <div class="tier-label tier-4">4</div>
+    <div class="tier-content" id="tier-4">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>George Washington Carver NM</span>
+      </a>
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Hot Springs NP</span>
+      </a>
+    </div>
   </div>
 
   <div class="tier-row">
-    <div class="tier-label d-tier">D</div>
-    <div class="tier-content" id="d-tier"></div>
+    <div class="tier-label tier-5">5</div>
+    <div class="tier-content" id="tier-5">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Fort Smith NHS</span>
+      </a>
+    </div>
   </div>
 
   <div class="tier-row">
-    <div class="tier-label f-tier">F</div>
-    <div class="tier-content" id="f-tier"></div>
+    <div class="tier-label tier-6">6</div>
+    <div class="tier-content" id="tier-6">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Pea Ridge NMP</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label tier-7">7</div>
+    <div class="tier-content" id="tier-7">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Wilson's Creek NB</span>
+      </a>
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Arkansas Post N MEM</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label tier-8">8</div>
+    <div class="tier-content" id="tier-8"></div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label tier-9">9</div>
+    <div class="tier-content" id="tier-9">
+      <a href="/tierlist/" class="tier-item" style="background-image: url('')">
+        <span>Little Rock Central High School NHS</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="tier-row">
+    <div class="tier-label tier-10">10</div>
+    <div class="tier-content" id="tier-10">
+      <a
+        href="/tierlist/"
+        class="tier-item"
+        style="background-image: url('/assets/images/DSCF0039.JPG')"
+      >
+        <span>President William Jefferson Clinton Birthplace Home NHS</span>
+      </a>
+    </div>
   </div>
 </div>
 
