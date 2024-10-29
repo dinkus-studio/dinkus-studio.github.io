@@ -38,5 +38,10 @@ Ultimately, we opted for a quick tour of the house before moving on, leaving us 
 
 
 ## Pics
-![image](../assets/images/clinton_NHS_entrance.JPG){: width="200px"}
+Here are a few pictures of the Clinton Birthplace Home National Historic Site.
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <img src="../assets/images/clinton_NHS_entrance.JPG" width="200px" />
+    <img src="../assets/images/clinton_NHS_picnic_table.JPG" width="200px" />
+    <img src="../assets/images/clinton_NHS_feet.JPG" width="400px" />
 
+</div>
