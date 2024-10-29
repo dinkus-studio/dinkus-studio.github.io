@@ -8,16 +8,15 @@ order: 5
 
 Welcome to our blog!
 
-We are a couple who loves to travel, play games, and create things together. We are passionate about exploring the world and sharing our experiences with others! We are not experts in the field, nor should you expect to find impressive or nuanced opions here. We are just two people who wanted to have a place to journal our adventures and share our thoughts on the different places we go!
+We are a couple who loves to travel, play games, and create things together. We are passionate about exploring the world and sharing our experiences with others! We are not experts in the field, nor should you expect to find impressive or nuanced options here. We are just two people who wanted to have a place to journal our adventures and share our thoughts on the different places we go!
 
 
 # Who are we
 
 #### Cas
 
-Hello!
-
-T.B.D. 
+Hello! 
+I’m Cas. I love to express myself by being creative. I like to paint, sew and play video games and playing with my dogs. I enjoy exploring a variety of hobbies, constantly seeking out new experiences and challenges. I believe life is all about creativity and discovery! 
 
 #### Cayub
 
