@@ -4,7 +4,7 @@ title: Completing Arkansas
 date: 2024-10-22 08:00:00 -0500
 categories: [top_category,another_category]
 tags: [testing,dumb_tag,please_delete]
-author: Cas
+author: cas
 ---
 
 # Mini Trip 3: Completing Arkansas
